@@ -19,8 +19,6 @@ Sub_metering_1 <- as.numeric(plot.data$Sub_metering_1)
 Sub_metering_2 <- as.numeric(plot.data$Sub_metering_2)
 Sub_metering_3 <- as.numeric(plot.data$Sub_metering_3)
 
-plot.matrix <- cbind(Sub_metering_1, Sub_metering_2, Sub_metering_3) 
-
 plot.times <- strptime(paste(as.character(plot.data$Date), plot.data$Time), 
                              "%Y-%m-%d %H:%M:%S")
 
